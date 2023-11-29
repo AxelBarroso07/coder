@@ -1,0 +1,64 @@
+[
+  {
+    "id": "508f12ce-6ff6-4fcc-8753-dd1d5791782b",
+    "products": [
+      {
+        "id": "d35ad575-795b-4d1e-a6a6-6b33de7c95ab",
+        "title": "Aceite de motor",
+        "description": "Aceite sintético de alto rendimiento",
+        "code": "45231876",
+        "price": "250",
+        "stock": "15",
+        "status": true,
+        "category": "automóvil",
+        "thumbnail": "thumbnail_motoroil",
+        "quantity": "0222222"
+      },
+      {
+        "id": "f4d5e6cb-9e8a-4f37-82f9-21043e899b0f",
+        "title": "Cepillo de dientes",
+        "description": "Cepillo de dientes suave con cerdas de nylon",
+        "code": "71239845",
+        "price": "50",
+        "stock": "50",
+        "status": true,
+        "category": "higiene oral",
+        "thumbnail": "thumbnail_toothbrush",
+        "quantity": 16
+      },
+      {
+        "id": "9c8b7a64-3d2e-47f1-8c54-6a35c9d02d18",
+        "title": "Botella de agua",
+        "description": "Botella reutilizable de acero inoxidable, libre de BPA",
+        "code": "62458973",
+        "price": "200",
+        "stock": "30",
+        "status": true,
+        "category": "accesorios",
+        "thumbnail": "thumbnail_waterbottle"
+      },
+      {
+        "id": "2e1d3c8b-4a5b-6c7d-8e9f-0a1b2c3d4e5f",
+        "title": "Camiseta",
+        "description": "Camiseta de algodón de manga corta con diseño estampado",
+        "code": "83124567",
+        "price": "150",
+        "stock": "25",
+        "status": true,
+        "category": "ropa",
+        "thumbnail": "thumbnail_tshirt"
+      },
+      {
+        "id": "4f5e6d7c-8b9a-1b2c-3d4e-5f6a7b8c9d0e",
+        "title": "Lámpara de escritorio",
+        "description": "Lámpara LED ajustable con puerto de carga USB",
+        "code": "47985612",
+        "price": "350",
+        "stock": "10",
+        "status": true,
+        "category": "iluminación",
+        "thumbnail": "thumbnail_desklamp"
+      }
+    ]
+  }
+]

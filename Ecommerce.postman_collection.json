@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "90fcd763-3d1b-4929-a23d-c2e9c58a9f5d",
+		"name": "Ecommerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API PRODUCTS",
+			"item": [
+				{
+					"name": "ADD PRODUCT",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"{{$randomUUID}}\",\n    \"title\": \"WD-40\",\n    \"description\": \"producto para lubricar\",\n    \"code\": \"900034323\",\n    \"price\": \"300\",\n    \"stock\": \"20\",\n    \"status\" : false,\n    \"category\": \"lubricante\",\n    \"thumbnail\": \"thumbailexample\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE PRODUCT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"WD-45243534534\",\n    \"description\": \"producto para lubricar\",\n    \"code\": \"900034323\",\n    \"price\": \"43423\",\n    \"stock\": \"20\",\n    \"status\" : false,\n    \"category\": \"lubricante\",\n    \"thumbnail\": \"thumbailexample\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products/f6a47777-c5c5-4ab3-96ea-18778b207cef",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"f6a47777-c5c5-4ab3-96ea-18778b207cef"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE PRODUCT",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/5c51f56c-4794-43a1-a69e-538a68cae253",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"5c51f56c-4794-43a1-a69e-538a68cae253"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "API CART",
+			"item": [
+				{
+					"name": "CREATE CART",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"{{$randomUUID}}\",\n    \"products\": [\n        {\n            \"id\": \"d35ad575-795b-4d1e-a6a6-6b33de7c95ab\",\n            \"title\": \"Aceite de motor\",\n            \"description\": \"Aceite sintético de alto rendimiento\",\n            \"code\": \"45231876\",\n            \"price\": \"250\",\n            \"stock\": \"15\",\n            \"status\": true,\n            \"category\": \"automóvil\",\n            \"thumbnail\": \"thumbnail_motoroil\"\n        },\n        {\n            \"id\": \"f4d5e6cb-9e8a-4f37-82f9-21043e899b0f\",\n            \"title\": \"Cepillo de dientes\",\n            \"description\": \"Cepillo de dientes suave con cerdas de nylon\",\n            \"code\": \"71239845\",\n            \"price\": \"50\",\n            \"stock\": \"50\",\n            \"status\": true,\n            \"category\": \"higiene oral\",\n            \"thumbnail\": \"thumbnail_toothbrush\"\n        },\n        {\n            \"id\": \"9c8b7a64-3d2e-47f1-8c54-6a35c9d02d18\",\n            \"title\": \"Botella de agua\",\n            \"description\": \"Botella reutilizable de acero inoxidable, libre de BPA\",\n            \"code\": \"62458973\",\n            \"price\": \"200\",\n            \"stock\": \"30\",\n            \"status\": true,\n            \"category\": \"accesorios\",\n            \"thumbnail\": \"thumbnail_waterbottle\"\n        },\n        {\n            \"id\": \"2e1d3c8b-4a5b-6c7d-8e9f-0a1b2c3d4e5f\",\n            \"title\": \"Camiseta\",\n            \"description\": \"Camiseta de algodón de manga corta con diseño estampado\",\n            \"code\": \"83124567\",\n            \"price\": \"150\",\n            \"stock\": \"25\",\n            \"status\": true,\n            \"category\": \"ropa\",\n            \"thumbnail\": \"thumbnail_tshirt\"\n        },\n        {\n            \"id\": \"4f5e6d7c-8b9a-1b2c-3d4e-5f6a7b8c9d0e\",\n            \"title\": \"Lámpara de escritorio\",\n            \"description\": \"Lámpara LED ajustable con puerto de carga USB\",\n            \"code\": \"47985612\",\n            \"price\": \"350\",\n            \"stock\": \"10\",\n            \"status\": true,\n            \"category\": \"iluminación\",\n            \"thumbnail\": \"thumbnail_desklamp\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/cart/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cart",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET CART  PRODUCTS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/cart/508f12ce-6ff6-4fcc-8753-dd1d5791782b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cart",
+								"508f12ce-6ff6-4fcc-8753-dd1d5791782b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ADD PRODUCTS TO CART",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/cart/508f12ce-6ff6-4fcc-8753-dd1d5791782b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cart",
+								"508f12ce-6ff6-4fcc-8753-dd1d5791782b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "947226f9-3be1-442d-97f8-285f27d3600a",
+    "title": "WD-40",
+    "description": "producto para lubricar",
+    "code": "900034323",
+    "price": "300",
+    "status": false,
+    "stock": "20",
+    "category": "lubricante",
+    "thumbnail": "thumbailexample"
+  },
+  {
+    "id": "f6a47777-c5c5-4ab3-96ea-18778b207cef",
+    "title": "WD-45243534534",
+    "description": "producto para lubricar",
+    "code": "900034323",
+    "price": "43423",
+    "status": false,
+    "stock": "20",
+    "category": "lubricante",
+    "thumbnail": "thumbailexample"
+  }
+]
